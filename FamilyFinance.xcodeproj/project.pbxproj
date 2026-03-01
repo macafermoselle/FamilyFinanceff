@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		194F5D992F34C15800D7B01B /* FamilyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		194F5E242F36112F00D7B01B /* FamilyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		194F5E2C2F36249100D7B01B /* Exceptions for "FamilyFinance" folder in "FamilyFinance" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 194F5D982F34C15800D7B01B /* FamilyFinance */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		194F5D9B2F34C15800D7B01B /* FamilyFinance */ = {
+		194F5E132F360E8A00D7B01B /* FamilyFinance */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				194F5E2C2F36249100D7B01B /* Exceptions for "FamilyFinance" folder in "FamilyFinance" target */,
+			);
 			path = FamilyFinance;
 			sourceTree = "<group>";
 		};
@@ -32,17 +45,9 @@
 		194F5D902F34C15800D7B01B = {
 			isa = PBXGroup;
 			children = (
-				194F5D9B2F34C15800D7B01B /* FamilyFinance */,
-				194F5D9A2F34C15800D7B01B /* Products */,
+				194F5E132F360E8A00D7B01B /* FamilyFinance */,
+				194F5E242F36112F00D7B01B /* FamilyFinance.app */,
 			);
-			sourceTree = "<group>";
-		};
-		194F5D9A2F34C15800D7B01B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				194F5D992F34C15800D7B01B /* FamilyFinance.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,13 +66,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				194F5D9B2F34C15800D7B01B /* FamilyFinance */,
+				194F5E132F360E8A00D7B01B /* FamilyFinance */,
 			);
 			name = FamilyFinance;
 			packageProductDependencies = (
 			);
 			productName = FamilyFinance;
-			productReference = 194F5D992F34C15800D7B01B /* FamilyFinance.app */;
+			productReference = 194F5E242F36112F00D7B01B /* FamilyFinance.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +100,7 @@
 			mainGroup = 194F5D902F34C15800D7B01B;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 194F5D9A2F34C15800D7B01B /* Products */;
+			productRefGroup = 194F5D902F34C15800D7B01B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -249,10 +254,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FamilyFinance/FamilyFinance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = NK865MQ979;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyFinance/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Usamos Face ID para mantener tus finanzas seguras y privadas.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -262,8 +271,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ffgroup.FamilyFinance;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carya.familyfinances.2026;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -280,10 +289,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FamilyFinance/FamilyFinance.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = NK865MQ979;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyFinance/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Usamos Face ID para mantener tus finanzas seguras y privadas.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,9 +307,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ffgroup.FamilyFinance;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carya.familyfinances.2026;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
